@@ -1,4 +1,4 @@
-package com.rutas.santaelena.app.rutas;
+package com.rutasbus.santaelena.app.rutas;
 
 import java.io.IOException;
 import okhttp3.Credentials;

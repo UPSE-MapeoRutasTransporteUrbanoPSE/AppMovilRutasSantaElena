@@ -1,4 +1,4 @@
-package com.rutas.santaelena.app.rutas;
+package com.rutasbus.santaelena.app.rutas;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.PolyUtil;

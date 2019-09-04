@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.rutas.santaelena.app.rutas.HeadersAuth;
+import com.rutasbus.santaelena.app.rutas.HeadersAuth;
 import com.rutas.santaelena.app.rutas.R;
 
 import org.springframework.http.HttpEntity;

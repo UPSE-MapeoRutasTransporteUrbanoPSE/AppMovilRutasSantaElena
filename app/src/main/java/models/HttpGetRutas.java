@@ -4,9 +4,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.rutas.santaelena.app.rutas.BasicAuthInterceptor;
-import com.rutas.santaelena.app.rutas.HeadersAuth;
-import com.rutas.santaelena.app.rutas.MapsActivity;
+import com.rutasbus.santaelena.app.rutas.HeadersAuth;
+import com.rutasbus.santaelena.app.rutas.MapsActivity;
 import com.rutas.santaelena.app.rutas.R;
 
 import org.springframework.http.HttpEntity;
@@ -21,7 +20,6 @@ import java.util.List;
 
 import entities.Ruta;
 import inicio.SplashInicio;
-import okhttp3.OkHttpClient;
 
 /*CLASE QUE ME DEVUELVE TODAS LAS RUTAS EN UNA LISTA DE TIPO RUTA MODEL*/
 

@@ -1,6 +1,5 @@
 package inicio;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -8,20 +7,15 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
-import android.view.Gravity;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.rutas.santaelena.app.rutas.MapsActivity;
+import com.rutasbus.santaelena.app.rutas.MapsActivity;
 import com.rutas.santaelena.app.rutas.R;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import denuncias.AbstractAsyncActivity;
 import entities.Ruta;
 import lineas.LineAllWayPcercanos;
 import models.HttpGetRutas;

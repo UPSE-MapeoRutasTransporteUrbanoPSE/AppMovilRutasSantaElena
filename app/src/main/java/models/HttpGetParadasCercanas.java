@@ -5,8 +5,8 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.rutas.santaelena.app.rutas.HeadersAuth;
-import com.rutas.santaelena.app.rutas.MapsActivity;
+import com.rutasbus.santaelena.app.rutas.HeadersAuth;
+import com.rutasbus.santaelena.app.rutas.MapsActivity;
 import com.rutas.santaelena.app.rutas.R;
 
 import org.springframework.http.HttpEntity;

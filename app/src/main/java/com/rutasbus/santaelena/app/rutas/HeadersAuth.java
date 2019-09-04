@@ -1,4 +1,4 @@
-package com.rutas.santaelena.app.rutas;
+package com.rutasbus.santaelena.app.rutas;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -9,7 +9,6 @@ import org.springframework.http.MediaType;
 import android.util.Base64;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 
 public class HeadersAuth {
 

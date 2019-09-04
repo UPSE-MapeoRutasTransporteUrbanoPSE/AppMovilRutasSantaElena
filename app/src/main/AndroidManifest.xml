@@ -5,7 +5,8 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Comentada la siguiente linea porque producia errores al subir a google play.   -->
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />      -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -13,7 +14,7 @@
     <uses-permission android:name="com.google.android.maps" />
 
     <application
-        android:name=".GlobalClass"
+        android:name="com.rutasbus.santaelena.app.rutas.GlobalClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -30,35 +31,35 @@
         </activity>
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:label="@string/title_map"
             android:screenOrientation="portrait"
             />
         <activity
             android:name="lineas.LineaBus"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="sesion.IniciaSesion"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="sesion.RegistraUsuario"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="denuncias.Denuncias"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
 
         <activity
             android:name="lineas.AllBusesCirculando"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
 
         <activity
-            android:name="com.rutas.santaelena.app.rutas.CardHelp"
-            android:parentActivityName=".MapsActivity"
+            android:name="com.rutas.santaelena.app.rutas.ec.rutas.santaelena.app.rutas.CardHelp"
+            android:parentActivityName="com.rutasbus.santaelena.app.rutas.MapsActivity"
             android:screenOrientation="portrait"></activity>
 
         <meta-data

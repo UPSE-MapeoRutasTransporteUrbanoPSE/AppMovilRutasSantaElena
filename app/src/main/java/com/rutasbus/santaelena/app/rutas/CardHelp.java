@@ -1,8 +1,10 @@
-package com.rutas.santaelena.app.rutas;
+package com.rutasbus.santaelena.app.rutas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.rutas.santaelena.app.rutas.R;
 
 public class CardHelp extends AppCompatActivity {
 

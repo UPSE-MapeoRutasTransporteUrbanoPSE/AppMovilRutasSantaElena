@@ -1,4 +1,4 @@
-package com.rutas.santaelena.app.rutas;
+package com.rutasbus.santaelena.app.rutas;
 
 import android.Manifest;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -20,7 +19,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -40,11 +38,12 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.rutas.santaelena.app.rutas.R;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import PolyineBased.MapAnimator;
 import denuncias.AbstractAsyncActivity;
 import detectaRuta.Buses_disponibles;
 import detectaRuta.EncuentraRuta;
@@ -57,7 +56,6 @@ import placesNearPoint.Radio;
 import placesNearPoint.SearchPlacesParaderosNear;
 import sesion.CustomInfoWindowAdapter;
 import sesion.IniciaSesion;
-import static com.rutas.santaelena.app.rutas.R.id.map;
 
 public class MapsActivity extends AbstractAsyncActivity implements OnMapReadyCallback, NavigationView.OnNavigationItemSelectedListener {
     private Marker markerOrigen, markerFindelViajeEnbus;
