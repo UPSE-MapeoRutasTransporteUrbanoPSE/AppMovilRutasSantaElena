@@ -1,6 +1,7 @@
 package entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.Date;
  * Created by Javier on 29/05/2018.
  */
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Reporte {
 
     @JsonProperty("id")

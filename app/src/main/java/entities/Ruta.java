@@ -1,5 +1,6 @@
 package entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
  * Created by Javier on 12/03/2018.
  */
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Ruta {
 
     @JsonProperty("id")
