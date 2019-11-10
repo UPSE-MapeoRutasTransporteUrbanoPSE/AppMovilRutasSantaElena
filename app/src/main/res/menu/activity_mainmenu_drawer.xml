@@ -20,7 +20,7 @@
         tools:ignore="HardcodedText" />
 
 
-    <item android:title="BUSES ">
+    <!--item android:title="BUSES ">
         <menu>
             <item
                 android:id="@+id/nav_buses"
@@ -29,7 +29,7 @@
                 tools:ignore="HardcodedText" />
 
         </menu>
-    </item>
+    </item-->
 
 
     <item android:title="LINEAS BUSES">

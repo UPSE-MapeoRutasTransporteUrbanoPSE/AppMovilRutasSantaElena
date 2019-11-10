@@ -37,7 +37,7 @@
     <string name="inicio_sesion">Iniciar Sesión</string>
     <string name="registrate">Registrarse</string>
 
-    <string name="cargar_rutas">Cargando Rutas. Por Favor espere :) ..</string>
+    <string name="cargar_rutas">Cargando. Por Favor espere :) ..</string>
     <string name="activar_Gps">El sistema GPS esta desactivado,Debe activarlo para continuar</string>
 
     <string name="contactanos_mensaje">Quieres decirnos algo ?\n Contáctanos por Aquí</string>

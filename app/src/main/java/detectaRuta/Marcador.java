@@ -123,6 +123,16 @@ public class Marcador extends FragmentActivity {
         return markerRutaBus;
     }
 
+    public Marker colocarMarcadorBusesRutadelMapaHistortial(LatLng PuntoLatLong, String title, GoogleMap mMap, Context context) {
+        //coloca el marcador donde deberia escoger y bajarse del bus
+        icon = BitmapDescriptorFactory.fromResource(R.drawable.avancebus);
+        Marker markerRutaBus;
+
+        markerRutaBus = colocarMarcador(PuntoLatLong, title, icon, mMap, context);
+
+        return markerRutaBus;
+    }
+
     public String getNombreCalles(LatLng street, Context context) { //Metodo que me devuelve el nombre de la calle
         String calle = "";
         Geocoder geocoder = new Geocoder(context, Locale.getDefault());

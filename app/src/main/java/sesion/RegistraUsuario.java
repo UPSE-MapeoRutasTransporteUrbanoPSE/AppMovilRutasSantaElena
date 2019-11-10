@@ -128,8 +128,8 @@ public class RegistraUsuario extends AppCompatActivity{
             editTextMail.setText("");
             return false;
         }
-        if(movil == null || movil.trim().length() == 0){
-            Toast.makeText(this, "numero de telefono es requerido", Toast.LENGTH_SHORT).show();
+        if(movil == null || movil.trim().length() < 10 ){
+            Toast.makeText(this, "numero de telefono incorrecto", Toast.LENGTH_SHORT).show();
             editTextMovil.setText("");
             return false;
         }

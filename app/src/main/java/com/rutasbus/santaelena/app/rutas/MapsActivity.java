@@ -170,12 +170,11 @@ public class MapsActivity extends AbstractAsyncActivity implements OnMapReadyCal
         } else if (id == R.id.nav_ayuda) {
             Intent intent = new Intent(MapsActivity.this, CardHelp.class);
             startActivity(intent);
-        } else if (id == R.id.nav_buses) {
-            //if (busesMapa != null) busesMapa.detener();
+       /* } else if (id == R.id.nav_buses) {
             Intent intent = new Intent(MapsActivity.this, AllBusesCirculando.class);
             if (lineaPosicion!=0)
                 intent.putExtra("bus",nombreRutasTodasLineas.get(lineaPosicion));
-            startActivity(intent);
+            startActivity(intent);*/
         } else if (id == R.id.nav_7) {
             String lineaBus = "7";
             Intent intent = new Intent(MapsActivity.this, LineaBus.class);
@@ -275,7 +274,6 @@ public class MapsActivity extends AbstractAsyncActivity implements OnMapReadyCal
      */
     private void mostrarRutaSeleccionada(int seleccion, LatLng latLngPuntoCercanoAtomarElBus, LatLng latLngPuntoCercanoBajadaDelBus) {
         lineaPosicion = seleccion;
-//        horizontalScrollView.setVisibility(View.VISIBLE);
         markerFindelViajeEnbus = colocarMarker.colocarMarcadorRutaBusMasCercanaDetino(latLngPuntoCercanoBajadaDelBus, "Llegue hasta aqui", mMap, this);
 
         markerPointsOrigenDestino.add(latLngPuntoCercanoAtomarElBus);
@@ -289,7 +287,6 @@ public class MapsActivity extends AbstractAsyncActivity implements OnMapReadyCal
         if (busesMapa != null) busesMapa.ini();
 
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(this, LayoutInflater.from(this), nombreRutasTodasLineas.get(seleccion),busesMapa)); //MUESTRA INFORMACION EN EL MARCADOR
-
         new Buses_disponibles().infoMaps(this);
     }
 
